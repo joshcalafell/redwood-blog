@@ -1,0 +1,26 @@
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 300px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.card-body {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #666;
+}
+
+.card-created-at {
+  font-size: 14px;
+  color: #999;
+}
