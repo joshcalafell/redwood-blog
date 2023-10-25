@@ -4,7 +4,7 @@
   min-height: 100vh;
   width: 100%;
   max-width: 100vw;
-  padding: 1rem;
+  padding: 32px;
   background: #333;
   padding: 16px 32px 0 32px;
 }
@@ -12,7 +12,7 @@
 .layout--blog-container header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   max-width: 100vw;
@@ -21,11 +21,23 @@
 .layout--blog-container header h1 a {
   text-decoration: none;
   color: white;
+  font-family: "Mono DisplayName", "Mono", monospace;
 }
+
+.header--blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+}
+
+
 
 .layout--blog-container header nav ul {
   padding: 0;
-  margin: 0 0 0 0;
+  margin: 0 0 0 22px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,8 +51,9 @@
 
 .layout--blog-container header nav ul li a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: lightgreen;
+  font-family: "Inter", "Mono", monospace;
 }
 
 .layout--blog-container main {
