@@ -17,6 +17,8 @@ import {
 import { MetaTags, useMutation } from '@redwoodjs/web'
 import { toast, Toaster } from '@redwoodjs/web/toast'
 
+import './ContactPage.css'
+
 const CREATE_CONTACT = gql`
   mutation CreateContactMutation($input: CreateContactInput!) {
     createContact(input: $input) {
@@ -97,7 +99,7 @@ const ContactPage = () => {
         />
         <FieldError name="message" className="error" />
 
-        <Submit disabled={loading}>Save</Submit>
+        <Submit disabled={loading}>Submit</Submit>
       </Form>
     </>
   )

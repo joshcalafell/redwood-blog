@@ -4,6 +4,8 @@ import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
 
 import Article from 'src/components/Article'
 
+import './ArticlesCell.css'
+
 export const QUERY = gql`
   query ArticlesQuery {
     articles: posts {
@@ -25,10 +27,10 @@ export const Failure = ({ error }: CellFailureProps) => (
 
 export const Success = ({ articles }: CellSuccessProps<ArticlesQuery>) => {
   return (
-    <>
+    <div className="cell--container">
       {articles.map((article) => (
         <Article key={article.id} article={article} />
       ))}
-    </>
+    </div>
   )
 }

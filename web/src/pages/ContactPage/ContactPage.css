@@ -1,0 +1,34 @@
+
+textarea, input {
+  width: 360px;
+  width: 360px;
+  margin-bottom: 16px;
+  border: solid 1px #333;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+input {
+  height: 33px;
+}
+
+textarea {
+  height: 90px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+button {
+  margin: 32px 0 0 100px;
+  width: 150px;
+  border: solid 1px #333;
+  border-radius: 4px;
+  height: 38px;
+  font-size: 16px;
+  background-color: #333;
+  border: solid 1px white;
+  color: lightgreen;
+}
+
