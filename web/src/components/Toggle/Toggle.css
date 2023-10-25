@@ -4,7 +4,8 @@
 }
 
 .toggle-button {
-  padding: 0px 0px;
+  width: 100px;
+  height: 33px;
   background-color: lightgreen;
   color: black;
   border: none;
