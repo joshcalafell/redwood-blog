@@ -5,3 +5,10 @@
   margin: 0 auto;
   max-width: 1024px;
 }
+
+@media (max-width: 768px) {
+  .cell--container {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center the items vertically */
+  }
+}
