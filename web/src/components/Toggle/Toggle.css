@@ -13,6 +13,21 @@
   margin-top: 16px;
 }
 
+.button {
+  background-color: #3498db; /* Initial background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition for background color */
+}
+
+.button:hover {
+  background-color: #e74c3c; /* New background color on hover */
+}
+
+
 .toggle-button.active {
   background-color: #f86d5d;
 }
