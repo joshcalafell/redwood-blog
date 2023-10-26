@@ -23,7 +23,7 @@ label {
 button {
   margin: 32px 0 0 100px;
   width: 150px;
-  background-color: #ee4c92; /* Initial background color */
+  background-color: #ee4c92 !important; /* Initial background color */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -32,7 +32,5 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.button {
-/* Add a transition for background color */
-}
+
 

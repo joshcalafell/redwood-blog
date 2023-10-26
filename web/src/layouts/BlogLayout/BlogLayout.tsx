@@ -46,7 +46,7 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
       <main>{children}</main>
       <footer>
         <div className="footer--blog">
-          <p>&copy; {new Date().getFullYear()} Redwood Blog</p>
+          <p>&copy; {new Date().getFullYear()} Josh Calafell</p>
         </div>
       </footer>
     </div>
