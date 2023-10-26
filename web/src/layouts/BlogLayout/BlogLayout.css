@@ -37,7 +37,7 @@
   text-decoration: none;
   color: white;
   font-family: "Megrim", "Mono", monospace;
-  font-size: 33px;
+  font-size: 28px;
 }
 
 .header--blog {
@@ -93,7 +93,7 @@
 .layout--blog-container header nav ul li a {
   text-decoration: none;
   font-size: 18px;
-  color:rgb(87, 224, 215);
+  color:#4ddad1
 }
 
 .layout--blog-container main {

@@ -10,14 +10,17 @@ interface Props {
 const Article = ({ article }: Props) => {
   return (
     <div className="card">
-      <h2 className="card-title">
-        <Link to={routes.article({ id: article.id as never })}>
-          {article.title}
-        </Link>
-      </h2>
+      <div className="card-header">
+        <div className="card-title h5">
+          <Link to={routes.article({ id: article.id as never })}>
+            {article.title}
+          </Link>
+        </div>
+      </div>
+
       <p className="card-body">{article.body}</p>
-      <p className="card-created-at">
-        Created at: {formatDate(article.createdAt)}
+      <p className="end-0 mt-4   text-xs  text-black">
+        Posted on {formatDate(article.createdAt)}
       </p>
     </div>
   )

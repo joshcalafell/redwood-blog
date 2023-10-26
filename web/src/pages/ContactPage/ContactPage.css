@@ -23,7 +23,7 @@ label {
 button {
   margin: 32px 0 0 100px;
   width: 123px;
-  background-color: lightgreen !important; /* Initial background color */
+  background-color:#4ddad1 !important; /* Initial background color */
   color: black;
   padding: 10px 20px;
   border: none;
