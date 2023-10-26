@@ -23,12 +23,16 @@ label {
 button {
   margin: 32px 0 0 100px;
   width: 150px;
-  border: solid 1px #333;
-  border-radius: 4px;
-  height: 38px;
-  font-size: 16px;
-  background-color: #333;
-  border: solid 1px white;
-  color: lightgreen;
+  background-color: #ee4c92; /* Initial background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+/* Add a transition for background color */
 }
 

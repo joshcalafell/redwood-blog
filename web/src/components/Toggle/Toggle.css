@@ -3,20 +3,11 @@
 
 }
 
-.toggle-button {
-  width: 100px;
-  height: 33px;
-  background-color: lightgreen;
-  color: black;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 16px;
-}
 
 .button {
-  background-color: #3498db; /* Initial background color */
-  color: #fff;
+  width: 150px;
+  background-color: #ee4c92; /* Initial background color */
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -24,13 +15,11 @@
   transition: background-color 0.3s ease; /* Add a transition for background color */
 }
 
-.button:hover {
-  background-color: #e74c3c; /* New background color on hover */
-}
+
 
 
 .toggle-button.active {
-  background-color: #f86d5d;
+  background-color: #ee4c92;
 }
 
 .content {

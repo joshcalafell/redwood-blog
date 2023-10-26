@@ -12,7 +12,7 @@ function Toggle() {
     <div className="container">
       <button
         onClick={handleToggle}
-        className={`toggle-button ${isLoggedIn ? 'active' : ''}`}
+        className={`toggle-button button ${isLoggedIn ? 'active' : ''}`}
       >
         {isLoggedIn ? 'Log Out' : 'Log In'}
       </button>

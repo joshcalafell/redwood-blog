@@ -44,6 +44,11 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
         <Toggle />
       </header>
       <main>{children}</main>
+      <footer>
+        <div className="footer--blog">
+          <p>&copy; {new Date().getFullYear()} Redwood Blog</p>
+        </div>
+      </footer>
     </div>
   )
 }
