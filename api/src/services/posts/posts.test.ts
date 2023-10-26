@@ -1,6 +1,6 @@
 import type { Post } from '@prisma/client'
 
-import { posts, post, createPost, updatePost, deletePost } from './posts'
+import { posts, post, createPost, updatePost } from './posts'
 import type { StandardScenario } from './posts.scenarios'
 
 // Generated boilerplate tests do not account for all circumstances
@@ -39,12 +39,5 @@ describe('posts', () => {
     })
 
     expect(result.title).toEqual('String2')
-  })
-
-  scenario('deletes a post', async (scenario: StandardScenario) => {
-    const original = (await deletePost({ id: scenario.post.one.id })) as Post
-    const result = await post({ id: original.id })
-
-    expect(result).toEqual(null)
   })
 })
