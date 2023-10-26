@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 100vw;
   padding: 32px;
-  background: #333;
+  background: radial-gradient(#333 25%, #232323 75%);
   padding: 16px 32px 0 32px;
 }
 
@@ -36,8 +36,8 @@
 .layout--blog-container header h1 a {
   text-decoration: none;
   color: white;
-  font-family: "Mono DisplayName", "Mono", monospace;
-  font-size: 28px;
+  font-family: "Megrim", "Mono", monospace;
+  font-size: 33px;
 }
 
 .header--blog {
@@ -93,7 +93,7 @@
 .layout--blog-container header nav ul li a {
   text-decoration: none;
   font-size: 18px;
-  color:lightgreen;
+  color:rgb(87, 224, 215);
 }
 
 .layout--blog-container main {

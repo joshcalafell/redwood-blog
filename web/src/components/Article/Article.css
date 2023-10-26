@@ -12,7 +12,7 @@
 .card-title {
   font-size: 24px;
   margin: 0;
-  color: #ee4c92;
+  color: #4ddad1;
 }
 
 .card-body {
@@ -23,5 +23,5 @@
 
 .card-created-at {
   font-size: 14px;
-  color: #ee4c92;
+  color: #666;
 }
