@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Toggle.css' // Import your CSS file for styling
 
-function Toggle() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-
+function Toggle({ isLoggedIn, toggleLogin }) {
   const handleToggle = () => {
-    setIsLoggedIn(!isLoggedIn)
+    toggleLogin(!isLoggedIn)
   }
 
   return (
