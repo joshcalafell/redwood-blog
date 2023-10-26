@@ -23,13 +23,14 @@ label {
 button {
   margin: 32px 0 0 100px;
   width: 150px;
-  background-color: #ee4c92 !important; /* Initial background color */
-  color: white;
+  background-color: lightgreen !important; /* Initial background color */
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 14px;
 }
 
 

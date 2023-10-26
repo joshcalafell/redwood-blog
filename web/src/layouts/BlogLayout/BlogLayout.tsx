@@ -1,7 +1,5 @@
 import './BlogLayout.css'
 
-import { useState } from 'react'
-
 import { Link, routes } from '@redwoodjs/router'
 
 import Toggle from 'src/components/Toggle/Toggle'
@@ -11,7 +9,6 @@ type BlogLayoutProps = {
 }
 
 const BlogLayout = ({ children }: BlogLayoutProps) => {
-  const [isLoggedIn] = useState(false)
   return (
     <div className="layout--blog-container">
       <header>
@@ -31,24 +28,15 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
               <li>
                 <Link to={routes.contact()}>Contact</Link>
               </li>
-              {isLoggedIn ? (
-                <li>
-                  <Link to={routes.posts()}>Admin</Link>
-                </li>
-              ) : (
-                <></>
-              )}
+              <li>
+                <Link to={routes.posts()}>Admin</Link>
+              </li>
             </ul>
           </nav>
         </div>
         <Toggle />
       </header>
       <main>{children}</main>
-      <footer>
-        <div className="footer--blog">
-          <p>&copy; {new Date().getFullYear()} Josh Calafell</p>
-        </div>
-      </footer>
     </div>
   )
 }

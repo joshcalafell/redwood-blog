@@ -4,27 +4,20 @@
 }
 
 
-.button {
+.toggle-button {
   width: 150px;
-  background-color: #ee4c92; /* Initial background color */
-  color: white;
-  padding: 10px 20px;
+  height: 38px;
+  background-color: lightgreen; /* Initial background color */
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Add a transition for background color */
+  transition: background-color 0.3s ease;
+  margin: 0;
+  font-size: 14px;/* Add a transition for background color */
 }
 
 
 
 
-.toggle-button.active {
-  background-color: #ee4c92;
-}
 
-.content {
-  background-color: #ecf0f1;
-  padding: 20px;
-
-  border: 1px solid #ccc;
-}
