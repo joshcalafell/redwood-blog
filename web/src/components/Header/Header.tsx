@@ -71,13 +71,13 @@ export default function Example() {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-4"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <Link to={routes.home()}>
             <div className="flex items-center">
-              <span className="sr-only">RedwoodJS Blog</span>
+              <span className="sr-only">Rabbit Fighter Studios</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlSpace="preserve"
@@ -100,7 +100,7 @@ export default function Example() {
                   />
                 </g>
               </svg>
-              <div className="ml-3">&nbsp;&nbsp;RedwoodJS Blog</div>
+              <div className="ml-3">&nbsp;&nbsp;Rabbit Fighter Studios</div>
             </div>
           </Link>
         </div>
@@ -177,7 +177,8 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link to={routes.home()}>Home</Link>
+          <Link to={routes.services()}>Services</Link>
+          <Link to={routes.blog()}>Blog</Link>
           <Link to={routes.about()}>About</Link>
           <Link to={routes.contact()}>Contact</Link>
           {isLoggedIn ? <Link to={routes.posts()}>Admin</Link> : null}
@@ -196,7 +197,7 @@ export default function Example() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="{{#}}" className="-m-1.5 p-1.5">
-              <span className="sr-only">RedwoodJS Blog</span>
+              <span className="sr-only">Rabbit Fighter Studios</span>
               <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -216,7 +217,9 @@ export default function Example() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <div className="flex flex-col">
-                  <Link to={routes.home()}>Home</Link>
+                  <Link to={routes.blog()}>Blog</Link>
+                  <br />
+                  <Link to={routes.services()}>Services</Link>
                   <br />
                   <Link to={routes.about()}>About</Link>
                   <br />
