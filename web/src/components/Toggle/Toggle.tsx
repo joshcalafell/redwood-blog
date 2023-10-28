@@ -10,7 +10,7 @@ function Toggle({ isLoggedIn, toggleLogin }) {
   }
 
   return (
-    <div className="container">
+    <div className="align-center container flex justify-end">
       <button
         onClick={handleToggle}
         className={`toggle-button button ${isLoggedIn ? 'active' : ''}`}

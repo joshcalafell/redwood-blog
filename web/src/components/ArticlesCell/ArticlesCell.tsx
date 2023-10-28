@@ -27,7 +27,7 @@ export const Failure = ({ error }: CellFailureProps) => (
 
 export const Success = ({ articles }: CellSuccessProps<ArticlesQuery>) => {
   return (
-    <div className="cell--container">
+    <div className="w-100 mx-auto flex justify-center align-top">
       {articles.map((article) => (
         <Article key={article.id} article={article} />
       ))}

@@ -16,6 +16,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
+import { Link, routes } from '@redwoodjs/router'
+
 import Toggle from '../Toggle/Toggle'
 
 const products = [
@@ -73,7 +75,7 @@ export default function Example() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="{{#}}" className="-m-1.5 p-1.5">
+          <Link to={routes.home()}>
             <div className="flex items-center">
               <span className="sr-only">RedwoodJS Blog</span>
               <svg
@@ -98,9 +100,9 @@ export default function Example() {
                   />
                 </g>
               </svg>
-              <div className=" ">&nbsp;&nbsp;RedwoodJS Blog</div>
+              <div className="ml-3">&nbsp;&nbsp;RedwoodJS Blog</div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -115,7 +117,7 @@ export default function Example() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Products
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -175,32 +177,10 @@ export default function Example() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a
-            href="{{#}}"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Blog
-          </a>
-          <a
-            href="{{#}}"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            About
-          </a>
-          <a
-            href="{{#}}"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Contact
-          </a>
-          {isLoggedIn ? (
-            <a
-              href="{{#}}"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Posts
-            </a>
-          ) : null}
+          <Link to={routes.home()}>Home</Link>
+          <Link to={routes.about()}>About</Link>
+          <Link to={routes.contact()}>Contact</Link>
+          {isLoggedIn ? <Link to={routes.posts()}>Admin</Link> : null}
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Toggle isLoggedIn={isLoggedIn} toggleLogin={toggleLogin} />
@@ -239,7 +219,7 @@ export default function Example() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Products
                         <ChevronDownIcon
                           className={classNames(
                             open ? 'rotate-180' : '',

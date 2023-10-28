@@ -7,9 +7,8 @@ import './BlogLayout.css'
 const BlogLayout = ({ children }) => {
   return (
     <div>
-      <Header {...children}>
-        <main className=" ">{children}</main>
-      </Header>
+      <Header />
+
       {/*  <div className="layout--blog-container">
      <header>
         <div className="header--blog">
@@ -38,7 +37,7 @@ const BlogLayout = ({ children }) => {
         </div>
         <Toggle isLoggedIn={isLoggedIn} toggleLogin={toggleLogin} />
       </header> */}
-      <main className=" ">{children}</main>
+      <main className="">{children}</main>
     </div>
   )
 }
