@@ -1,5 +1,5 @@
 import { navigate, routes } from '@redwoodjs/router'
-import './Toggle.css' // Import your CSS file for styling
+// Import your CSS file for styling
 
 function Toggle({ isLoggedIn, toggleLogin }) {
   const handleToggle = () => {

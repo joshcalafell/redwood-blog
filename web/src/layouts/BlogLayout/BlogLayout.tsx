@@ -1,21 +1,17 @@
-import React, { useState } from 'react'
+// import { useState } from 'react'
 
-import { Link } from '@redwoodjs/router'
-import { routes } from '@redwoodjs/router'
+import Header from 'src/components/Header/Header'
 
-import Toggle from 'src/components/Toggle/Toggle'
 import './BlogLayout.css'
 
 const BlogLayout = ({ children }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-  const toggleLogin = (value) => {
-    setIsLoggedIn(value)
-  }
-
   return (
-    <div className="layout--blog-container">
-      <header>
+    <div>
+      <Header {...children}>
+        <main className=" ">{children}</main>
+      </Header>
+      {/*  <div className="layout--blog-container">
+     <header>
         <div className="header--blog">
           <h1>
             <Link to={routes.home()}>REDWOOD BLOG</Link>
@@ -41,8 +37,8 @@ const BlogLayout = ({ children }) => {
           </nav>
         </div>
         <Toggle isLoggedIn={isLoggedIn} toggleLogin={toggleLogin} />
-      </header>
-      <main>{children}</main>
+      </header> */}
+      <main className=" ">{children}</main>
     </div>
   )
 }

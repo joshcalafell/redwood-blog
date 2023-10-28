@@ -27,7 +27,10 @@
   },
   "packageManager": "yarn@3.6.3",
   "dependencies": {
-    "api": "workspace:^"
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "api": "workspace:^",
+    "web": "workspace:^"
   },
   "lint-staged": {
     "(web|api)/src/**": "yarn rw lint --fix"
