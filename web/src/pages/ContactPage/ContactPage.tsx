@@ -1,17 +1,4 @@
-/*
-  This example requires some changes to your config:
 
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 
 const ContactPage = () => {
   return (
@@ -249,12 +236,12 @@ const ContactPage = () => {
                 </legend>
                 <div className="mt-6 space-y-6">
                   <div className="relative flex gap-x-3">
-                    <div className="flex h-6 items-center">
+                    <div className="flex items-center">
                       <input
                         id="comments"
                         name="comments"
                         type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                        className="h-4 w-4  rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
                       />
                     </div>
                     <div className="text-sm leading-6">
@@ -270,12 +257,12 @@ const ContactPage = () => {
                     </div>
                   </div>
                   <div className="relative flex gap-x-3">
-                    <div className="flex h-6 items-center">
+                    <div className="flex items-center">
                       <input
                         id="candidates"
                         name="candidates"
                         type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                        className="h-4 w-4  rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
                       />
                     </div>
                     <div className="text-sm leading-6">
@@ -291,12 +278,12 @@ const ContactPage = () => {
                     </div>
                   </div>
                   <div className="relative flex gap-x-3">
-                    <div className="flex h-6 items-center">
+                    <div className="flex items-center">
                       <input
                         id="offers"
                         name="offers"
                         type="checkbox"
-                        className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                        className="h-4 w-4  rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
                       />
                     </div>
                     <div className="text-sm leading-6">
@@ -321,13 +308,13 @@ const ContactPage = () => {
                 <p className="mt-1 text-sm leading-6 text-gray-600">
                   These are delivered via SMS to your mobile phone.
                 </p>
-                <div className="mt-6 space-y-6">
+                <div className="mt-6 space-y-8">
                   <div className="flex items-center gap-x-3">
                     <input
                       id="push-everything"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="h-4 w-4 mt-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       htmlFor="push-everything"
@@ -341,7 +328,7 @@ const ContactPage = () => {
                       id="push-email"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="h-4 w-4 mt-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       htmlFor="push-email"
@@ -355,7 +342,7 @@ const ContactPage = () => {
                       id="push-nothing"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="h-4 w-4 mt-4  border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       htmlFor="push-nothing"

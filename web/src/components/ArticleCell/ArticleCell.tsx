@@ -43,6 +43,8 @@ export const Success = ({
           />
           Posted on {formatDate(article.createdAt)}
         </p>
+        <hr />
+        
       </div>
     </div>
   )
