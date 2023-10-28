@@ -1,5 +1,3 @@
-
-
 const ContactPage = () => {
   return (
     <>
@@ -314,7 +312,7 @@ const ContactPage = () => {
                       id="push-everything"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 mt-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="mt-4 h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       htmlFor="push-everything"
@@ -328,7 +326,7 @@ const ContactPage = () => {
                       id="push-email"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 mt-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="mt-4 h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       htmlFor="push-email"
@@ -342,7 +340,7 @@ const ContactPage = () => {
                       id="push-nothing"
                       name="push-notifications"
                       type="radio"
-                      className="h-4 w-4 mt-4  border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="mt-4 h-4 w-4  border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       htmlFor="push-nothing"
