@@ -1,6 +1,11 @@
 const ContactPage = () => {
   return (
     <>
+    <div className="mx-auto max-w-4xl text-center">
+        <h1 className="mb-4 text-3xl font-semibold text-gray-800">
+          Contact Us
+        </h1>
+      </div>
       <form className="mx-auto flex justify-center">
         <div className="space-y-12">
           <div className="border-b border-gray-900/10 pb-12">

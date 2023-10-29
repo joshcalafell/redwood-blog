@@ -69,9 +69,9 @@ export default function Example() {
     setIsLoggedIn(value)
   }
   return (
-    <header className="bg-white px-4 py-4">
+    <header className="bg-white">
       <nav
-        className="mx-auto flex  items-center justify-between p-2 lg:px-4"
+        className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-4 "
         aria-label="Global"
       >
         <div className="flex lg:flex-1">

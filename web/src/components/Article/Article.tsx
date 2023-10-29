@@ -8,9 +8,9 @@ interface Props {
 
 const Article = ({ article }: Props) => {
   return (
-    <div className="w-100">
+    <div className="h-100 min-h-full md:max-h-screen">
       {' '}
-      <div className="mx-4 max-w-md rounded-lg border border-gray-200 bg-white p-6 px-4 shadow dark:border-gray-700 dark:bg-gray-800">
+      <div className="mx-4 max-w-md rounded-lg border border-gray-200 bg-white object-contain p-6 px-4 shadow dark:border-gray-700 dark:bg-gray-800">
         <a href="{#}">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             <Link to={routes.article({ id: article.id as never })}>

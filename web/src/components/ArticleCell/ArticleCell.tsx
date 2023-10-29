@@ -25,8 +25,8 @@ export const Success = ({
   article,
 }: CellSuccessProps<FindArticleQuery, FindArticleQueryVariables>) => {
   return (
-    <>
-      <div className=" mx-auto  justify-center sm:align-center rounded-lg border border-gray-200 bg-white p-6 px-4 shadow dark:border-gray-700 dark:bg-gray-800">
+    <div>
+      <div className=" mx-auto max-w-sm justify-center rounded-lg border border-gray-200 bg-white p-6 px-4 shadow dark:border-gray-700 dark:bg-gray-800">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {article.title}
         </h5>
@@ -45,7 +45,7 @@ export const Success = ({
         </p>
         <hr />
       </div>
-    </>
+    </div>
   )
 
   function formatDate(timestamp) {
